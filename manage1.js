@@ -61,6 +61,7 @@ var counter,i;
             //copying contents of extracted directory to editor destination
             copydir(domain1+'editor', 'editor', function(err) {
                 if ( err ) console.log('ERROR: ' + err);
+                counter++; progBar(counter);
             });
             /*ncp(domain1+'editor', editor_dest,stopOnErr=true, function (err) {
                 if (err) {
