@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "UTF-8">
+      <title>Hello World!</title>
+      <script src = "./manage1.js" ></script>
+      <!--<script>localStorage.clear();</script>-->
+      <link rel = "stylesheet" href = "./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+   </head>   
+   <body>
+      <div class = "container"><hr />
+         <div class="page-header"><h2 style="color:blue">Manage Extensions</h2></div>
+         <p>First set paths of player and editor and then add Application</p>
+         <hr />
+                <div class="form-group">
+                        <label for="sel1">letzNav Application:</label>
+                            <select id="extensionlist" class="form-control">
+         </select>
+         </div>
+         <button class = "btn btn-success" id = "countbtn" onclick="load()">Load</button>
+         <div class="progress" style="margin-top:20px">
+                <div class="progress-bar" id="bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                </div>
+              </div>
+         <hr />
+         <div class="page-header"><h2 style="color:blue">Set Paths</h2></div><hr />
+         <div class="form-group"><label>Player Path</label><input type=text id=playerPath class="form-control"></input></div>
+         <div class="form-group"><label>Editor Path</label><input type=text id=editorPath class="form-control"></input></div>
+         <button class = "btn btn-success" onclick="pathUpdate()">Set Paths</button>
+         <hr />
+         <div class="page-header"><h2 style="color:blue">Add Application</h2></div><hr />
+         <div class="form-group"><label>Application</label><input type=text id=appName class="form-control"></input></div>
+         <div class="form-group"><label>Domain name</label><input type=text id=appDomain class="form-control"></input></div>
+         <button class = "btn btn-success" onclick="addApp()" style="margin-bottom:20px">Add Application</button>
+      </div>
+      
+   </body>
+</html>
