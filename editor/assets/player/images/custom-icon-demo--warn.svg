@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>custom-icon-demo--warn</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Editor-UI:-L" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="custom-icon-demo--warn">
+            <polygon id="Rectangle-13" fill="#F66969" points="13 5 22 20 4 20"></polygon>
+            <polygon id="Combined-Shape" fill="#FFFFFF" points="14 18 14 16 12 16 12 18"></polygon>
+            <rect id="Rectangle" fill="#FFFFFF" x="12" y="10" width="2" height="5"></rect>
+        </g>
+    </g>
+</svg>

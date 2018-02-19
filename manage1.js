@@ -59,8 +59,8 @@ var counter,i;
     fs.emptyDir(editor_dest).then(() => {
         console.log('successfully cleared editor');     
             //copying contents of extracted directory to editor destination
-            copydir(domain1+'editor', 'editor', function(err) {
-                if ( err ) console.log('ERROR: ' + err);
+            unzip(domain1+'editor.crx',editor_dest).then(() => {
+                console.log("editor crx unzipped");
                 counter++; progBar(counter);
             });
             /*ncp(domain1+'editor', editor_dest,stopOnErr=true, function (err) {
@@ -68,7 +68,6 @@ var counter,i;
                     return console.log("ncp error"+err);
                 }
                 console.log('editor loaded');
-                counter++; progBar(counter);
            });*/
     })
     .catch(err => {
@@ -121,10 +120,10 @@ var counter,i;
                     //this is callback after downloading extension
                     console.log('Downloaded editor from URI');
                     //Unzipping the crx file downloaded
-                    unzip(domain1+'editor.crx').then(() => {
+                    /*unzip(domain1+'editor.crx').then(() => {
                         console.log("editor crx unzipped");
                         manageEditor();
-                    });
+                    });*/manageEditor();
                    
                 });
             }//end if the editor crx is already present
